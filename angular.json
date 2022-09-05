@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-print": {
+    "ngx-print-jg": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "library",
@@ -40,5 +40,5 @@
       }
     }
   },
-  "defaultProject": "ngx-print"
+  "defaultProject": "ngx-print-jg"
 }

@@ -19,7 +19,7 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Ngx-Print Version**
+**ngx-print-jg Version**
 Include the current affected version.
 
 **Desktop (please complete the following information):**

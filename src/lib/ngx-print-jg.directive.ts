@@ -2,42 +2,42 @@ import { Directive, HostListener, Input } from '@angular/core';
 @Directive({
   selector: "button[ngxPrint]"
 })
-export class NgxPrintDirective {
+export class NgxPrintJgDirective {
 
   public _printStyle = [];
 
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input() printSectionId: string;
 
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input() printTitle: string;
 
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input() useExistingCss = false;
 
   /**
    * A delay in milliseconds to force the print dialog to wait before opened. Default: 0
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input() printDelay: number = 0;
 
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input()
   set printStyle(values: { [key: string]: { [key: string]: string } }) {
@@ -57,7 +57,7 @@ export class NgxPrintDirective {
  *
  * -join/replace to transform an array objects to css-styled string
  *
- * @memberof NgxPrintDirective
+ * @memberof NgxPrintJgDirective
  */
 public returnStyleValues() {
   return `<style> ${this._printStyle.join(' ').replace(/,/g,';')} </style>`;
@@ -68,12 +68,12 @@ public returnStyleValues() {
    *
    * @returns html for the given tag
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   private _styleSheetFile = '';
 
   /**
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    * @param cssList
    */
   @Input()
@@ -93,7 +93,7 @@ public returnStyleValues() {
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @Input() saveOrPrint: string;
   /**
@@ -145,7 +145,7 @@ public returnStyleValues() {
   /**
    *
    *
-   * @memberof NgxPrintDirective
+   * @memberof NgxPrintJgDirective
    */
   @HostListener('click')
   public print(): void {

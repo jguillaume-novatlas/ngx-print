@@ -2,13 +2,13 @@ import {Component, DebugElement}    from "@angular/core";
 import {TestBed, ComponentFixture}  from '@angular/core/testing';
 import {By}                         from "@angular/platform-browser";
 
-import { NgxPrintDirective }        from './ngx-print.directive';
+import { NgxPrintDirective }        from './ngx-print-jg.directive';
 
 @Component({
   template: `
   <div id="print-section">
     <h1>
-      Welcome to ngx-print
+      Welcome to ngx-print-jg
     </h1>
     <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
     <h2>Here are some links to help you start: </h2>
@@ -78,7 +78,7 @@ describe('NgxPrintDirective', () => {
   });
 
   // it('should test the @Input printStyle', () => {
-  //   const directive = new NgxPrintDirective();
+  //   const directive = new NgxPrintJgDirective();
   //   directive.printStyle = styleSheet;
   //   for (var key in directive.printStyle) {
   //     if (directive.printStyle.hasOwnProperty(key)) {
@@ -91,7 +91,7 @@ describe('NgxPrintDirective', () => {
   // });
 
   // it('should returns a string from array of objects', () => {
-  //   const directive = new NgxPrintDirective();
+  //   const directive = new NgxPrintJgDirective();
   //   directive._printStyle = [
   //     "h2{border:solid 1px}",
   //     "h1{color:red,border:1px solid}"

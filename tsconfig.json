@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "ngx-print": [
-        "dist/ngx-print"
+      "ngx-print-jg": [
+        "dist/ngx-print-jg"
       ],
-      "ngx-print/*": [
-        "dist/ngx-print/*"
+      "ngx-print-jg/*": [
+        "dist/ngx-print-jg/*"
       ]
     }
   }
