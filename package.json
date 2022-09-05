@@ -1,23 +1,23 @@
 {
-  "name": "ngx-print-jg",
+  "name": "ngx-print-jg-jg",
   "version": "1.2.3",
   "description": "Plug n' Play Angular (2++) directive to print your stuff",
-  "author": "https://github.com/selemxmn/ngx-print/graphs/contributors",
+  "author": "https://github.com/selemxmn/ngx-print-jg/graphs/contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/selemxmn/ngx-print.git"
+    "url": "git+https://github.com/selemxmn/ngx-print-jg.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/selemxmn/ngx-print/issues"
+    "url": "https://github.com/selemxmn/ngx-print-jg/issues"
   },
-  "homepage": "https://github.com/selemxmn/ngx-print#readme",
+  "homepage": "https://github.com/selemxmn/ngx-print-jg#readme",
   "keywords": [
     "print",
     "angular",
     "library",
     "ng-print",
-    "ngx-print",
+    "ngx-print-jg",
     "directive",
     "dependency",
     "angular-print"

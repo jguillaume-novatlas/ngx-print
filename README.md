@@ -1,19 +1,19 @@
-[![](https://badgen.net/npm/dt/ngx-print)](https://www.npmjs.com/package/ngx-print) [![](https://travis-ci.org/selemxmn/ngx-print.svg?branch=master)](https://travis-ci.org/selemxmn/ngx-print) [![Coverage Status](https://coveralls.io/repos/github/selemxmn/ngx-print/badge.svg?branch=unit-tests)](https://coveralls.io/github/selemxmn/ngx-print?branch=unit-tests)
+[![](https://badgen.net/npm/dt/ngx-print-jg)](https://www.npmjs.com/package/ngx-print-jg) [![](https://travis-ci.org/selemxmn/ngx-print-jg.svg?branch=master)](https://travis-ci.org/selemxmn/ngx-print-jg) [![Coverage Status](https://coveralls.io/repos/github/selemxmn/ngx-print-jg/badge.svg?branch=unit-tests)](https://coveralls.io/github/selemxmn/ngx-print-jg?branch=unit-tests)
 
-# ngx-print : *plug n' play Angular (2++) directive to print your stuff*
+# ngx-print-jg : *plug n' play Angular (2++) directive to print your stuff*
 This directive makes printing your HTML sections smooth and easy in your Angular application. It is inspired from the old [AngularJS ngPrint](https://github.com/gilf/ngPrint) directive, thus it is intendend to be used with the new Angular -2/4/5/6/7-... ***Enjoy ! contributions are so welcomed :)***
 
 ## Setup
 
  **1-** In your root application folder run:
 ```bash
-$ npm install ngx-print
+$ npm install ngx-print-jg
 ```
 
- **2-** Once `ngx-print` is installed, you need to import the main module `NgxPrintModule` :
+ **2-** Once `ngx-print-jg` is installed, you need to import the main module `NgxPrintModule` :
 
    ```js
-import {NgxPrintModule} from 'ngx-print';
+import {NgxPrintModule} from 'ngx-print-jg';
 
 @NgModule({
   ...
@@ -130,7 +130,7 @@ Here some simple styles were added to every `h1` & `h2` tags within the `div` wh
 ```
 ## Contributors :1st_place_medal: 
 
-Huge thanks to: [deeplotia](https://github.com/deeplotia) , [Ben L](https://github.com/broem) , [Gavyn McKenzie](https://github.com/gavmck) , [silenceway](https://github.com/silenceway), [Muhammad Ahsan Ayaz](https://github.com/AhsanAyaz) and to all  `ngx-print` users 
+Huge thanks to: [deeplotia](https://github.com/deeplotia) , [Ben L](https://github.com/broem) , [Gavyn McKenzie](https://github.com/gavmck) , [silenceway](https://github.com/silenceway), [Muhammad Ahsan Ayaz](https://github.com/AhsanAyaz) and to all  `ngx-print-jg` users 
 
 ## Donation
 
