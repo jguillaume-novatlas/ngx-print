@@ -90,7 +90,12 @@ public returnStyleValues() {
       this._styleSheetFile = linkTagFn(cssList);
     }
   }
-
+  /**
+   *
+   *
+   * @memberof NgxPrintDirective
+   */
+  @Input() saveOrPrint: string;
   /**
    * @returns string which contains the link tags containing the css which will
    * be injected later within <head></head> tag.
@@ -109,9 +114,9 @@ public returnStyleValues() {
   }
 
   /**
-   * 
+   *
    * @param data the html element collection to save defaults to
-   * 
+   *
    */
   private getFormData(data: any) {
     for (var i = 0; i < data.length; i++) {
@@ -124,7 +129,7 @@ public returnStyleValues() {
 
   /**
    * @returns html section to be printed along with some associated inputs
-   * 
+   *
    */
   private getHtmlContents() {
     let printContents = document.getElementById(this.printSectionId);
@@ -133,7 +138,7 @@ public returnStyleValues() {
 
     let txt = printContents.getElementsByTagName('textarea');
     this.getFormData(txt);
-    
+
     return printContents.innerHTML;
   }
 
@@ -147,15 +152,36 @@ public returnStyleValues() {
     let printContents, popupWin, styles = '', links = '';
     const baseTag = this.getElementTag('base');
 
-    if(this.useExistingCss) {
+    if (this.useExistingCss) {
       styles = this.getElementTag('style');
       links = this.getElementTag('link');
     }
 
     printContents = this.getHtmlContents();
-    popupWin = window.open("", "_blank", "top=0,left=0,height=auto,width=auto");
-    popupWin.document.open();
-    popupWin.document.write(`
+    if (this.saveOrPrint == "save") {
+      let fileName = this.printTitle + '.pdf';
+      let blob = new Blob([printContents], {type: "application/pdf"});
+      if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+        //save file for IE
+        window.navigator.msSaveOrOpenBlob(blob, fileName);
+      } else {
+        //save for other browsers: Chrome, Firefox
+
+        const objectUrl: string = URL.createObjectURL(blob);
+        const a: HTMLAnchorElement = document.createElement('a') as HTMLAnchorElement;
+
+        a.href = objectUrl;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+
+        document.body.removeChild(a);
+        URL.revokeObjectURL(objectUrl);
+      }
+    } else {
+      popupWin = window.open("", "_blank", "top=0,left=0,height=auto,width=auto");
+      popupWin.document.open();
+      popupWin.document.write(`
       <html>
         <head>
           <title>${this.printTitle ? this.printTitle : ""}</title>
@@ -171,7 +197,7 @@ public returnStyleValues() {
             function triggerPrint(event) {
               window.removeEventListener('load', triggerPrint, false);
               setTimeout(function() {
-                closeWindow(window.print());
+                      closeWindow(window.print());
               }, ${this.printDelay});
             }
             function closeWindow(){
@@ -181,6 +207,7 @@ public returnStyleValues() {
           </script>
         </body>
       </html>`);
-    popupWin.document.close();
+      popupWin.document.close();
+    }
   }
 }
