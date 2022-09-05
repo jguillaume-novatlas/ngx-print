@@ -2,7 +2,7 @@ import {Component, DebugElement}    from "@angular/core";
 import {TestBed, ComponentFixture}  from '@angular/core/testing';
 import {By}                         from "@angular/platform-browser";
 
-import { NgxPrintDirective }        from './ngx-print-jg.directive';
+import { NgxPrintJgDirective }        from './ngx-print-jg.directive';
 
 @Component({
   template: `
@@ -34,19 +34,19 @@ import { NgxPrintDirective }        from './ngx-print-jg.directive';
       </tr>
     </table>
   </div>
-  <button printSectionId="print-section" ngxPrint></button>
+  <button printSectionId="print-section" NgxPrintJg></button>
   `
 })
-class TestNgxPrintComponent {
+class TestNgxPrintJgComponent {
 }
 
-describe('NgxPrintDirective', () => {
+describe('NgxPrintJgDirective', () => {
 
   let buttonEl:   DebugElement;
-  let component:  TestNgxPrintComponent;
-  let fixture:    ComponentFixture<TestNgxPrintComponent>;
+  let component:  TestNgxPrintJgComponent;
+  let fixture:    ComponentFixture<TestNgxPrintJgComponent>;
 
-  // To change this later, so it'll depend on TestNgxPrintComponent
+  // To change this later, so it'll depend on TestNgxPrintJgComponent
   let styleSheet: {[key: string]: {[key: string]: string}}
                    = {
                      'h2' : {'border': 'solid 1px'},
@@ -57,23 +57,23 @@ describe('NgxPrintDirective', () => {
 
     // Configure a NgModule-like decorator metadata
     TestBed.configureTestingModule({
-      declarations: [TestNgxPrintComponent, NgxPrintDirective]
+      declarations: [TestNgxPrintJgComponent, NgxPrintJgDirective]
     });
 
     // Create a fixture object (that is going to allows us to create an instance of that component)
-    fixture = TestBed.createComponent(TestNgxPrintComponent);
+    fixture = TestBed.createComponent(TestNgxPrintJgComponent);
 
     // Create a component instance ( ~ new Component)
     component = fixture.componentInstance;
 
     // Get the button element (on which we tag the directive) to simulate clicks on it
-    buttonEl =  fixture.debugElement.query(By.directive(NgxPrintDirective));
+    buttonEl =  fixture.debugElement.query(By.directive(NgxPrintJgDirective));
 
     fixture.detectChanges();
   });
 
   it('should create an instance', () => {
-    const directive = new NgxPrintDirective();
+    const directive = new NgxPrintJgDirective();
     expect(directive).toBeTruthy();
   });
 

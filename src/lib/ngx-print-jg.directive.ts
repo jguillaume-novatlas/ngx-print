@@ -1,6 +1,6 @@
 import { Directive, HostListener, Input } from '@angular/core';
 @Directive({
-  selector: "button[ngxPrint]"
+  selector: "button[NgxPrintJg]"
 })
 export class NgxPrintJgDirective {
 

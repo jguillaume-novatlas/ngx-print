@@ -47,10 +47,10 @@ export class YourAppModule {
 </div>
 
  <!--
-   2)- Add the directive name in your button (ngxPrint),
+   2)- Add the directive name in your button (NgxPrintJg),
    3)- Affect your ID to printSectionId
  -->
-<button printSectionId="print-section" ngxPrint>print</button> 
+<button printSectionId="print-section" NgxPrintJg>print</button> 
 
 ```
 ## Optional properties
@@ -69,7 +69,7 @@ export class YourAppModule {
 <button  
 	printTitle="MyTitle"  
 	printSectionId="print-section"  
-	ngxPrint>print</button>
+	NgxPrintJg>print</button>
 
 ```
 
@@ -88,7 +88,7 @@ export class YourAppModule {
 <button
 	[printStyle]="{h1 : {'color': 'red'}, h2 : {'border': 'solid 1px'}}"
 	printSectionId="print-section"
-	ngxPrint>print</button>
+	NgxPrintJg>print</button>
 
 ```
 
@@ -107,7 +107,7 @@ Here some simple styles were added to every `h1` & `h2` tags within the `div` wh
 <button
   [useExistingCss]="true"
 	printSectionId="print-section"
-	ngxPrint>print</button>
+	NgxPrintJg>print</button>
 
 ```
 
@@ -125,7 +125,7 @@ Here some simple styles were added to every `h1` & `h2` tags within the `div` wh
 <button
   styleSheetFile="assets/css/custom1.css,assets/css/custom2.css"
   printSectionId="print-section"
-  ngxPrint>print</button>
+  NgxPrintJg>print</button>
 
 ```
 ## Contributors :1st_place_medal: 

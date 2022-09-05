@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NgxPrintDirective } from './ngx-print-jg.directive';
+import { NgxPrintJgDirective } from './ngx-print-jg.directive';
 
 @NgModule({
-  declarations: [NgxPrintDirective],
+  declarations: [NgxPrintJgDirective],
   imports: [
   ],
-  exports: [NgxPrintDirective]
+  exports: [NgxPrintJgDirective]
 })
 export class NgxPrintJgModule { }
