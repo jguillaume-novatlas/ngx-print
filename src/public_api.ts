@@ -1,6 +1,6 @@
 /*
- * Public API Surface of ngx-print-jg
+ * Public API Surface of ngx-print
  */
 
-export * from './lib/ngx-print-jg.directive';
-export * from './lib/ngx-print-jg.module';
+export * from './lib/ngx-print.directive';
+export * from './lib/ngx-print.module';

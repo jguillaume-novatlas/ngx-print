@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgxPrintDirective } from './ngx-print-jg.directive';
+import { NgxPrintDirective } from './ngx-print.directive';
 
 @NgModule({
   declarations: [NgxPrintDirective],

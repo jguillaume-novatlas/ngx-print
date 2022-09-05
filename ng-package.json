@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "./dist/ngx-print-jg",
+  "dest": "./dist/ngx-print",
   "lib": {
     "entryFile": "src/public_api.ts"
 
